@@ -3,14 +3,13 @@ package com.meihua.pocket.list;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.function.Consumer;
-import java.util.function.Function;
 
 /**
  * @author meihua.hu
  */
 public class ListUtils {
 
-    public static <T> void BatchExecuteByDay(LocalDate beginDate, LocalDate endDate,
+    public static <T> void batchExecuteByDay(LocalDate beginDate, LocalDate endDate,
                                               Function<Pair<LocalDate,LocalDate>, List<T>> supplier,
                                               Consumer<List<T>> consumer){
 
